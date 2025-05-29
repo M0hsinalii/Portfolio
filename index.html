@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>Mohsin Ali - Portfolio</title>
+    <meta name="title" content="Kane Williams - Web & App Developer" />
+    <meta
+      name="description"
+      content="This is a personal portfolio html template made by codewithsadee"
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
+  </head>
+
+  <body>
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preloader" data-preloader>
+      <div class="circle"></div>
+    </div>
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.svg"
+            width="170"
+            height="40"
+            alt="Pfolio home"
+          />
+        </a>
+
+        <button
+          class="nav-toggle-btn"
+          data-nav-toggler
+          data-nav-toggle-btn
+          aria-label="Toggle menu"
+        >
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Resume</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Services</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Portfolio</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" aria-label="home">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">Mohsin Ali</h1>
+
+              <p class="hero-subtitle">Creative Web & App Developer</p>
+
+              <div class="hero-banner">
+                <img
+                  src="/assets/images/mohsin ali.jpg"
+                  width="800"
+                  height="800"
+                  alt="kane williams"
+                  class="w-100"
+                />
+              </div>
+
+              <p class="section-text">
+                I’m a Creative Computing student and UI/UX Designer based in the
+                UAE, currently in my final year of study. I specialize in web
+                development, app interfaces, game design, and physical
+                computing. I enjoy transforming complex challenges into sleek,
+                interactive, and user-focused digital experiences. <br />My goal
+                is to build applications that are both functional and visually
+                compelling. Whether it’s a website, mobile app, or interactive
+                project, I bring a unique blend of design thinking and technical
+                execution. I ensure every product reflects your brand identity
+                while staying intuitive and easy to use. From responsive layouts
+                to creative interactions, I aim to craft experiences people
+                remember.
+              </p>
+
+              <a
+                href="/assets/images/CV Mohsin Ali.pdf"
+                class="btn has-before"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span class="span">View CV</span>
+                <ion-icon name="download-outline" aria-hidden="true"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section class="service" aria-labelledby="service-label">
+          <div class="container">
+            <div class="title-wrapper">
+              <div>
+                <p class="section-subtitle">Services That I Provide</p>
+
+                <h2 class="h2 section-title" id="service-label">Services</h2>
+              </div>
+
+              <p class="section-text">
+                I offer end-to-end responsive web development services, crafting
+                modern, mobile-first sites with HTML5, CSS3, and JavaScript that
+                look and perform beautifully on any device. I build
+                cross-platform React Native mobile apps—complete with intuitive
+                voice-assistant features—that deliver seamless user experiences.
+                On the backend, I design and implement normalized SQL databases
+                and RESTful APIs to power robust, data-driven applications. My
+                UI/UX design and prototyping expertise ensures user-centered
+                interfaces and interactive workflows that engage and delight. I
+                also specialize in IoT and hardware prototyping, leveraging
+                Arduino and LED matrix technologies to create custom interactive
+                installations and smart devices.
+              </p>
+            </div>
+
+            <div class="slider" data-slider>
+              <ul class="slider-container service-list" data-slider-container>
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="desktop-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">Website Design</h3>
+
+                    <p class="card-text">
+                      This website is designed to showcase my services,
+                      highlight my expertise, and invite you to explore my work
+                      and discuss how we can collaborate on future projects.
+                    </p>
+
+                    <span class="text-lg card-number">01</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my website design service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="basket-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">eCommerce</h3>
+
+                    <p class="card-text">
+                      This website provides an overview of my services,
+                      showcases selected work samples, and invites you to get in
+                      touch to discuss potential collaborations and custom
+                      solutions.
+                    </p>
+
+                    <span class="text-lg card-number">02</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my eCommerce service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="color-filter-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">Graphic Design</h3>
+
+                    <p class="card-text">
+                      This website serves as a dynamic showcase of my skills and
+                      services, guiding visitors through my portfolio and
+                      inviting you to connect for future collaborations.
+                    </p>
+
+                    <span class="text-lg card-number">03</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my Graphic Design service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="megaphone-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">Digital Marketing</h3>
+
+                    <p class="card-text">
+                      This website presents my services, showcases my work, and
+                      invites you to reach out with any questions or to explore
+                      collaboration opportunities.
+                    </p>
+
+                    <span class="text-lg card-number">04</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my Digital Marketing service"
+                    ></a>
+                  </div>
+                </li>
+
+                <li class="slider-item" data-slider-item>
+                  <div class="service-card">
+                    <div class="card-icon">
+                      <ion-icon name="chatbubbles-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="h3 card-title">Social Media</h3>
+
+                    <p class="card-text">
+                      This website highlights my services, showcases selected
+                      projects, and invites you to get in touch to ask questions
+                      or start a collaboration.
+                    </p>
+
+                    <span class="text-lg card-number">05</span>
+
+                    <a
+                      href="#"
+                      class="layer-link"
+                      aria-label="More about my Social Media service"
+                    ></a>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="slider-controls">
+                <button
+                  class="slider-control prev"
+                  data-slider-prev
+                  aria-label="Slide to previous item"
+                >
+                  <div class="line"></div>
+                  <div class="arrow"></div>
+                </button>
+
+                <button
+                  class="slider-control next"
+                  data-slider-next
+                  aria-label="Slide to next item"
+                >
+                  <div class="line"></div>
+                  <div class="arrow"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #SKILLS
+      -->
+
+        <section class="section skills" aria-label="our skills">
+          <div class="container">
+            <p class="section-subtitle">I Make The Future</p>
+
+            <h2 class="h2 section-title">I Develop & Create Digital Future.</h2>
+
+            <div class="skills-wrapper">
+              <div>
+                <p class="section-text">
+                  I develop and create the digital future by architecting
+                  scalable web solutions that drive business growth and adapt
+                  effortlessly to evolving needs. I craft intuitive user
+                  interfaces and interactive prototypes that engage and delight
+                  users at every touchpoint. I integrate AI-powered
+                  features—such as voice assistants—to elevate usability and
+                  streamline workflows. Behind the scenes, I design and
+                  implement robust, normalized database backends and RESTful
+                  APIs to ensure data integrity and performance. I also build
+                  responsive, cross-platform mobile applications that deliver
+                  seamless experiences across devices.
+                </p>
+
+                <p class="section-text">
+                  Beyond traditional software, I prototype innovative IoT and
+                  hardware solutions using Arduino and LED matrix technologies,
+                  bringing smart, interactive installations to life.
+                  Continuously exploring emerging technologies, I future-proof
+                  digital experiences and empower organizations to stay ahead in
+                  a rapidly changing landscape.
+                </p>
+
+                <a href="#" class="btn has-before"
+                  >mohsinaliniamat1234@gmail.com</a
+                >
+              </div>
+
+              <div>
+                <ul class="skills-list">
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Design</p>
+
+                      <data class="progress-value" value="90">90%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 90%"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Word press</p>
+
+                      <data class="progress-value" value="80">80%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 80%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Web App</p>
+
+                      <data class="progress-value" value="80">93%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 93%"></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Web Devloper</p>
+
+                      <data class="progress-value" value="80">97%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 97%"></div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="progress-wrapper">
+                      <p class="progress-label">Social Media</p>
+
+                      <data class="progress-value" value="85">85%</data>
+                    </div>
+
+                    <div class="progress-bg">
+                      <div class="progress" style="width: 85%"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #PORTFOLIO
+      -->
+
+        <section class="portfolio" aria-labelledby="portfolio-label">
+          <div class="title-wrapper container">
+            <div>
+              <p class="section-subtitle" id="portfolio-label">My Works</p>
+
+              <h2 class="h2 section-title">Portfolio</h2>
+            </div>
+
+            <p class="section-text">
+              Welcome to my portfolio, showcasing web development and game
+              design projects from responsive HTML, CSS, and JavaScript sites to
+              interactive Unity games on Itch.io. Each project highlights my
+              problem-solving skills, attention to detail, and passion for
+              exploring new technologies. Through creative design and clean,
+              efficient code, I deliver both experimental work and real-world
+              client projects that reflect my dedication to continuous growth.
+            </p>
+          </div>
+
+          <div class="slider" data-slider>
+            <ul class="slider-container" data-slider-container>
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: 600; --height: 600"
+                >
+                  <img
+                    src="/assets/images/Untitled design.png"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Lia AI Cooking Advisor</h3>
+
+                    <p class="card-text">
+                      AI cooking assistant to the users with the application<br />
+                      download link in website. Landing page for the<br />
+                      application.
+                    </p>
+
+                    <p>
+                      <a
+                        href="https://liaai-c4974.web.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Open link
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: 600; --height: 600"
+                >
+                  <img
+                    src="/assets/images/BATHSPA.png"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Bathspa university Web</h3>
+
+                    <p class="card-text">
+                      I Developed a responsive, user-friendly front end for a
+                      <br />
+                      company’s website using HTML, CSS, and JavaScript, <br />
+                      gaining real-world experience in meeting <br />
+                      client requirements.
+                    </p>
+
+                    <p>
+                      <a
+                        href="https://bsu-live.github.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Open link
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: 600; --height: 600"
+                >
+                  <img
+                    src="/assets/images/web 3.png"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">MA-Builder Web</h3>
+
+                    <p class="card-text">
+                      Built a dedicated projects page showcasing <br />
+                      various coding experiments, demonstrating practical <br />
+                      experience and a passion for exploring diverse <br />
+                      web development techniques.
+                    </p>
+
+                    <p>
+                      <a
+                        href="https://m0hxin.github.io/index.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Open link
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: 600; --height: 600"
+                >
+                  <img
+                    src="/assets/images/web 4.png"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">MA-CARS Web</h3>
+
+                    <p class="card-text">
+                      Created a personal website using HTML, CSS, and <br />
+                      JavaScript to showcase projects and experiments, <br />
+                      highlighting my front-end skills, self-learning <br />
+                      efforts, and growth in web development.
+                    </p>
+
+                    <p>
+                      <a
+                        href="https://m0hxn.github.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Open link
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: 600; --height: 600"
+                >
+                  <img
+                    src="/assets/images/game 1.png"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">2048 Game</h3>
+
+                    <p class="card-text">
+                      A classic 2048 tile-merging puzzle game <br />
+                      built in Unity and deployed on Itch.io.
+                    </p>
+
+                    <p>
+                      <a
+                        href="https://mohxin-ali.itch.io/2048-game"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Open link
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="slider-item">
+                <div
+                  class="portfolio-card img-holder"
+                  style="--width: 600; --height: 600"
+                >
+                  <img
+                    src="/assets/images/game 2.png"
+                    width="600"
+                    height="600"
+                    loading="lazy"
+                    alt="portfolio"
+                    class="img-cover"
+                  />
+
+                  <div class="card-content">
+                    <h3 class="h3 card-title">Find the Door Game</h3>
+
+                    <p class="card-text">
+                      Find the Door is an escape-style puzzle game <br />
+                      built in Unity and deployed on Itch.io, <br />
+                      challenging players to solve clues to <br />
+                      find the exit.
+                    </p>
+
+                    <p>
+                      <a
+                        href="https://mohxin-ali.itch.io/2048-game"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Open link
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="slider-controls">
+              <button
+                class="slider-control prev"
+                data-slider-prev
+                aria-label="Slide to previous item"
+              >
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+
+              <button
+                class="slider-control next"
+                data-slider-next
+                aria-label="Slide to next item"
+              >
+                <div class="line"></div>
+                <div class="arrow"></div>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #BLOG
+      -->
+
+        <section class="section blog" aria-labelledby="blog-label">
+          <div class="container">
+            <p class="section-subtitle" id="blog-label">Recent Articles</p>
+
+            <h2 class="h2 section-title">Latest News</h2>
+
+            <ul class="blog-list">
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 700; --height: 470"
+                  >
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      width="700"
+                      height="470"
+                      loading="lazy"
+                      alt="Get Started With Tiktok Ads."
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <time class="time" datetime="2022-06-24">
+                      <span class="span text-lg">24</span>
+                      June 2022
+                    </time>
+
+                    <div>
+                      <h3 class="h3 card-title">
+                        Get Started With Tiktok Ads.
+                      </h3>
+
+                      <p class="card-text">
+                        Phasellus et lacus suscipit congue nis in the miss mine
+                        one miss the drana risus in tincidunt ornare.
+                      </p>
+
+                      <a href="#" class="btn has-before">
+                        <span class="span">Read more</span>
+
+                        <ion-icon name="arrow-forward"></ion-icon>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 700; --height: 470"
+                  >
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      width="700"
+                      height="470"
+                      loading="lazy"
+                      alt="UX in Ecommerce – 5 things to avoid."
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <time class="time" datetime="2022-06-27">
+                      <span class="span text-lg">27</span>
+                      June 2022
+                    </time>
+
+                    <div>
+                      <h3 class="h3 card-title">
+                        UX in Ecommerce – 5 things to avoid.
+                      </h3>
+
+                      <p class="card-text">
+                        Phasellus et lacus suscipit congue nis in the miss mine
+                        one miss the drana risus in tincidunt ornare.
+                      </p>
+
+                      <a href="#" class="btn has-before">
+                        <span class="span">Read more</span>
+
+                        <ion-icon name="arrow-forward"></ion-icon>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Get in touch</p>
+          </li>
+
+          <li>
+            <a href="mailto:info@kwilliams.com" class="footer-link"
+              >info@kwilliams.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="footer-list">
+          <li>
+            <p class="h4 footer-list-title">Locations</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">San Francisco — California</a>
+          </li>
+        </ul>
+
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-skype"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
