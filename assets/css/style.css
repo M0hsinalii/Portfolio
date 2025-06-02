@@ -998,3 +998,153 @@ color: white;}
   .hero .section-text { margin-block-end: 52px; }
 
 }
+/* Work Experience Styles (Desktop Default) */
+.work-experience {
+  padding-block: var(--section-padding);
+}
+
+.work-experience .container {
+  max-width: 1140px;
+  margin-inline: auto;
+  padding-inline: 12px;
+}
+
+.work-experience .section-subtitle {
+  text-transform: uppercase;
+  font-size: var(--fs-8);
+  font-weight: var(--fw-700);
+  margin-block-end: 20px;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+
+.work-experience .section-title {
+  font-size: var(--fs-2);
+  font-weight: var(--fw-800);
+  margin-block-end: 45px;
+  color: var(--white);
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.experience-item {
+  background-color: var(--raisin-black);
+  padding: 30px 40px;
+  border-radius: var(--radius-pill);
+  transition: 
+    background-color var(--transition-1), 
+    transform var(--transition-1), 
+    box-shadow var(--transition-1);
+  color: var(--white);       /* all child text is white */
+  overflow: hidden;          /* keep content inside rounded corners */
+  word-break: break-word;    /* force long words to wrap */
+}
+
+/* Default hover on the entire “pill” */
+.experience-item:hover {
+  /* preserve border-radius — no background‐color swap */
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.experience-title {
+  font-size: var(--fs-4);
+  font-weight: var(--fw-700);
+  color: var(--white);
+  margin-block-end: 8px;
+}
+
+.experience-role {
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  color: var(--white);
+  margin-block-end: 4px;
+}
+
+.experience-dates {
+  font-size: var(--fs-8);
+  font-weight: var(--fw-700);
+  color: var(--white);
+  margin-block-end: 16px;
+}
+
+.experience-description {
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: var(--white);
+  overflow-wrap: anywhere;  /* wrap any long text */
+}
+
+/* Responsive for Mobile Frames Only */
+@media (max-width: 767px) {
+  .work-experience .container {
+    max-width: 100%;
+    padding-inline: 16px;
+    text-align: center;
+  }
+
+  .work-experience .section-subtitle {
+    font-size: var(--fs-8);
+    margin-block-end: 16px;
+    text-align: center;
+  }
+
+  .work-experience .section-title {
+    font-size: var(--fs-4);
+    margin-block-end: 30px;
+    text-align: center;
+  }
+
+  .experience-list {
+    gap: 20px;
+  }
+
+  .experience-item {
+    padding: 20px;
+    text-align: center;
+    color: var(--white);
+    overflow: hidden;
+    word-break: break-word;
+    transition: 
+      transform var(--transition-1), 
+      box-shadow var(--transition-1);
+  }
+
+  .experience-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .experience-title {
+    font-size: var(--fs-5);
+    margin-block-end: 6px;
+    text-align: center;
+    color: var(--white);
+  }
+
+  .experience-role {
+    font-size: var(--fs-7);
+    margin-block-end: 4px;
+    text-align: center;
+    color: var(--white);
+  }
+
+  .experience-dates {
+    font-size: var(--fs-8);
+    margin-block-end: 12px;
+    text-align: center;
+    color: var(--white);
+  }
+
+  .experience-description {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--white);
+    overflow-wrap: anywhere;
+  }
+}
