@@ -168,7 +168,14 @@ body.nav-active { overflow: hidden; }
 }
 
 .h2 { font-size: var(--fs-2); }
-
+.h6 {
+  padding-top: 2%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+   font-size: var(--fs-2);
+   color: antiquewhite;
+  text-align: center;
+}
 .h3 {
   color: var(--white);
   font-size: var(--fs-4);
