@@ -103,7 +103,9 @@ a {
   text-decoration: none;
 }
 
-img { height: auto; }
+img { height: 10%;
+margin-bottom: -10%;
+margin-top: -10%; }
 
 button {
   background: none;
